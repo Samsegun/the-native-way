@@ -1,21 +1,24 @@
 import React from 'react';
 import { StyleSheet, Text, View, SafeAreaView, StatusBar } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
 import Texter from './components/Texter';
 import ColorBox from './components/ColorBox';
 import ListsExercise from './components/ListsExercise';
 
 const App = () => {
   return (
-    <SafeAreaView style={styles.safeContainer}>
-      <View style={styles.container}>
-        <Text style={styles.heading}>
-          Here are some boxes of different colours
-        </Text>
+    <NavigationContainer>
+      <SafeAreaView style={styles.safeContainer}>
+        <View style={styles.container}>
+          <Text style={styles.heading}>
+            Here are some boxes of different colours
+          </Text>
 
-        {/* <ColorBox /> */}
-        <ListsExercise />
-      </View>
-    </SafeAreaView>
+          {/* <ColorBox /> */}
+          <ListsExercise />
+        </View>
+      </SafeAreaView>
+    </NavigationContainer>
   );
 };
 

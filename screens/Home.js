@@ -127,7 +127,7 @@ const Home = ({ navigation }) => {
         renderItem={({ item }) => {
           return (
             <PalettePreview
-              onPress={() => navigation.navigate('ColorPalette', item)}
+              handlePress={() => navigation.navigate('ColorPalette', item)}
               palette={item}
             />
           );

@@ -22,18 +22,11 @@ const App = () => {
         <Stack.Screen
           name="ColorPalette"
           component={ColorPalette}
-          options={{ title: 'Solarized' }}
+          options={({ route }) => ({
+            title: route.params.paletteName,
+          })}
         />
       </Stack.Navigator>
-      {/* <SafeAreaView style={styles.safeContainer}>
-        <View style={styles.container}>
-          <Text style={styles.heading}>
-            Here are some boxes of different colours
-          </Text>
-
-          <ListsExercise />
-        </View>
-      </SafeAreaView> */}
     </NavigationContainer>
   );
 };

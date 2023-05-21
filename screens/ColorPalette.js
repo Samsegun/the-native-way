@@ -25,9 +25,6 @@ const ColorPalette = ({ route }) => {
         data={colors}
         keyExtractor={(item) => item.hexCode}
         renderItem={renderItem}
-        // ListHeaderComponent={
-        //   <Text style={{ fontWeight: 'bold', fontSize: 20 }}>Solarized</Text>
-        // }
       />
     </View>
   );

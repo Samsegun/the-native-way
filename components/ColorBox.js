@@ -73,11 +73,6 @@ const ColorBox = () => {
 
   return (
     <>
-      {/* <FlatList
-        data={DATA}
-        renderItem={renderItem}
-        keyExtractor={(item) => item.text}
-      /> */}
       <SectionList
         sections={DATA}
         keyExtractor={(item) => item.text}
